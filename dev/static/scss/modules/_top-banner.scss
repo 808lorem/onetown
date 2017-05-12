@@ -1,0 +1,31 @@
+.top-banner {
+	&__slider {
+		position: relative
+	}
+	&__arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 70px;
+		height: 70px;
+		border: 1px solid $bgTopBannerArrows;
+		border-radius: 50%;
+		z-index: 99;
+		&_prev {
+			&:after {
+				@include sprite($s-top-banner_arrow_prev);
+			}
+		}
+		&_next {
+			right: 0;
+			&:after {
+				@include sprite($s-top-banner_arrow_next);
+			}
+		}
+	}
+	&__slider-block {
+		background: url(../img/content/banner.jpg) no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+}
