@@ -1,0 +1,23 @@
+.about {
+	background: url(../img/general/about__bg.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	&__padding {
+		padding: 81px 0;
+	}
+	&__title {
+		color: $colorTitleWhite;
+		padding: 0 119px;
+		&:after {
+			bottom: -30px;
+		}
+	}
+	&__descr {
+		display: block;
+		text-transform: none;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.875;
+		margin-top: 27px;
+	}
+}
