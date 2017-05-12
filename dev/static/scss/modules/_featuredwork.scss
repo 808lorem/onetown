@@ -1,0 +1,56 @@
+.featuredwork {
+	padding: 112px 0 90px;
+	background: $bgFeaturedwork;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title {
+		color: $colorTitleDark;
+	}
+	&__slider {
+		width: 100%;
+		&_imac {
+			position: absolute;
+			top: 41px;
+			left: 43px;
+			width: 922px;
+			height: 504px;
+		}
+		&_iphone {
+			position: absolute;
+			top: 57px;
+			left: 17px;
+			width: 154px;
+			height: 273px;
+		}
+	}
+	&__img {
+		width: 100%;
+		max-width: 1007px;
+		height: 876px;
+		margin: 0 auto;
+		position: relative;
+		&_imac {
+			height: 100%;
+			background: url(../img/general/imac.png) no-repeat;
+			display: block;
+			position: relative;
+		}
+		&_iphone {
+			height: 100%;
+			background: url(../img/general/iphone.png) no-repeat;
+			display: block;
+			position: relative;
+		}
+	}
+	
+	&__iphone_position {
+		position: absolute;
+		bottom: 23px;
+		left: -70px;
+		width: 184px;
+		height: 390px;
+	}
+}

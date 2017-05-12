@@ -141,8 +141,8 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
 	var mainJsNano = gulp.src('dev/static/js/main.js')
 		.pipe(uglify())
-		.pipe(gulp.dest('dev/static/js'));
-    var buildJs = gulp.src('dev/static/js/**.js')
+		.pipe(gulp.dest('product/static/js'));
+    var buildJs = gulp.src(['dev/static/js/**.js', '!dev/static/js/main.js'])
         .pipe(gulp.dest('product/static/js'));
 
     var buildHtml = gulp.src('dev/*.html')

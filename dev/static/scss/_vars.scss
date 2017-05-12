@@ -1,7 +1,21 @@
 // FONTS
-$mainFont: sans-serif;
+$mainFont: "LatoRegular", sans-serif;
+$fontBold: "LatoBold", sans-serif;
 
 // COLOR
+$colorTitleDark: #3c2839;
+$colorTitleWhite: rgb(255, 255, 255);
+$colorTitleGrey: #626262;
 
+$colorLinkWhite: rgb(255, 255, 255);
+$colorLinkGrey: #626262;
+$colorLinkFooter: rgba(255, 255, 255, 0.5);
+$colorLinkActive: rgba(255, 255, 255, 0.5);
 
 // BG
+$bgTitleLine: #626262;
+$bgFeaturedwork: rgba(230, 230, 230, 0.5);
+
+$bgHeader: #373c44;
+
+$bgTopBannerArrows: #fff; 

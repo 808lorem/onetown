@@ -5,7 +5,7 @@
 @import '_vars';
 
 // Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
-// @import '_sprite';
+ @import '_sprite';
 
 // Подключаем миксины
 @import '_mixins';
@@ -21,6 +21,17 @@
 
 // Стили главной страницы
 @import 'page/_index';
+
+@import 'modules/_top-banner';
+
+// featured work
+@import 'modules/_featuredwork';
+
+// our services
+@import 'modules/_services';
+
+// about us
+@import 'modules/_about';
 
 // Стили футера
 @import 'modules/_footer';

@@ -1,6 +1,6 @@
 html {
 	line-height: 1;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 body {
@@ -9,6 +9,26 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
 	margin: 0;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 2.5rem;
+	font-weight: 400;
+	text-align: center;
+	position: relative;
+	margin-bottom: 100px;
+	&:after {
+		content: '';
+		display: block;
+		height: 1px;
+		width: 50px;
+		background: $bgTitleLine;
+		position: absolute;
+		left: 50%;
+		bottom: -44px;
+		transform: translateX(-50%);
+	}
 }
 
 ul,li {
@@ -23,7 +43,14 @@ p {
 
 a {
     text-decoration: none;
-    color: black;
+	font-family: $fontBold;
+	text-transform: uppercase;
+	color: $colorLinkWhite;
+	&:hover,
+	&:focus,
+	&:visited {
+		color: $colorTitleWhite;
+	}
 }
 
 audio,
@@ -41,7 +68,6 @@ textarea {
 
 section {
 	position: relative;
-	margin-bottom: 20px;
 }
 
 input,
@@ -88,7 +114,15 @@ button {
 
 .container {
 	width: 100%;
-	max-width: 1000px;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 15px;
+	box-sizing: content-box;
+}
+
+.main-container {
+	width: 100%;
+	max-width: 1920px;
 	margin: 0 auto;
 }
 
