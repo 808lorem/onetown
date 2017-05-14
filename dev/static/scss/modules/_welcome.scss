@@ -1,0 +1,48 @@
+.welcome {
+	&__flexbox {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__content {
+		width: 50%;
+		&_text {
+			padding: 10% 10% 0;
+		}
+	}
+	&__img {
+		max-width: 100%;
+		height: auto;
+	}
+	&__title {
+		color: $colorTitleDark;
+		margin-bottom: 40px;
+		&:after {
+			display: none;
+		}
+	}
+	&__text {
+		display: block;
+		color: $colorTextGrey;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.875;
+		text-align: center;
+		position: relative;
+		margin-bottom: 96px;
+		&:after {
+			content: '';
+			display: block;
+			height: 1px;
+			width: 50px;
+			background: $bgTitleLine;
+			position: absolute;
+			left: 50%;
+			bottom: -44px;
+			transform: translateX(-50%);
+		}
+	}
+	&__link {
+		border-color: $bgBorderLinkGrey;
+		color: $colorLinkGrey;
+	}
+}
