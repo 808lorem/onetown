@@ -739,14 +739,15 @@ button {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 15px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box; }
+  padding: 0 15px; }
 
 .main-container {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto; }
+
+.wrapper {
+  overflow: hidden; }
 
 *::-webkit-input-placeholder {
   opacity: 1; }
@@ -759,6 +760,21 @@ button {
 
 *:-ms-input-placeholder {
   opacity: 1; }
+
+.link__btn {
+  display: block;
+  margin: 0 auto;
+  letter-spacing: 3px;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 230px;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 17px; }
 
 .header {
   position: fixed;
@@ -808,12 +824,12 @@ button {
       top: 0;
       right: -20px; }
 
-.top-banner__slider {
+.top-banner__block-arrows {
   position: relative; }
 
 .top-banner__arrow {
+  cursor: pointer;
   position: absolute;
-  top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -823,23 +839,159 @@ button {
   -webkit-border-radius: 50%;
           border-radius: 50%;
   z-index: 99; }
-  .top-banner__arrow_prev:after {
-    background-image: url("../img/sprite/sprite.png");
-    background-position: -306px -188px;
-    width: 11px;
-    height: 20px; }
+  .top-banner__arrow_prev {
+    left: -200px; }
+    .top-banner__arrow_prev:after {
+      content: '';
+      display: block;
+      background-image: url("../img/sprite/sprite.png");
+      background-position: -306px -188px;
+      width: 11px;
+      height: 20px;
+      margin: 25px auto; }
   .top-banner__arrow_next {
-    right: 0; }
+    right: -200px; }
     .top-banner__arrow_next:after {
+      content: '';
+      display: block;
       background-image: url("../img/sprite/sprite.png");
       background-position: -280px -188px;
       width: 11px;
-      height: 20px; }
+      height: 20px;
+      margin: 25px auto; }
 
-.top-banner__slider-block {
+.top-banner__slider_bg-1 {
   background: url(../img/content/banner.jpg) no-repeat;
   background-size: cover;
   background-position: center center; }
+
+.top-banner__slider_bg-2 {
+  background: url(../img/content/meduza.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.top-banner__slider_relative {
+  position: relative; }
+
+.top-banner__slider_absolute {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.top-banner__slider_flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+
+.top-banner__content {
+  width: 100%; }
+
+.top-banner__title {
+  display: block;
+  text-transform: uppercase;
+  font-family: "LatoBold", sans-serif;
+  font-size: 4.875rem;
+  font-weight: 900;
+  color: white;
+  margin-left: 35px;
+  position: relative; }
+  .top-banner__title:before {
+    content: '.';
+    display: block;
+    position: absolute;
+    left: -35px; }
+  .top-banner__title_min {
+    display: block;
+    font-size: 2.625rem;
+    font-weight: 700; }
+
+.top-banner__text {
+  display: block;
+  font-size: 1.875rem;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  line-height: 1.5;
+  padding: 0px 50px;
+  position: relative;
+  margin-bottom: 95px; }
+  .top-banner__text:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 50px;
+    background: #626262;
+    position: absolute;
+    left: 50%;
+    bottom: -44px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+.top-banner__link {
+  border-color: white; }
+
+.welcome__flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.welcome__content {
+  width: 50%; }
+  .welcome__content_text {
+    padding: 10% 10% 0; }
+
+.welcome__img {
+  max-width: 100%;
+  height: auto; }
+
+.welcome__title {
+  color: #3c2839;
+  margin-bottom: 40px; }
+  .welcome__title:after {
+    display: none; }
+
+.welcome__text {
+  display: block;
+  color: #626262;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.875;
+  text-align: center;
+  position: relative;
+  margin-bottom: 96px; }
+  .welcome__text:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 50px;
+    background: #626262;
+    position: absolute;
+    left: 50%;
+    bottom: -44px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+.welcome__link {
+  border-color: #626262;
+  color: #626262; }
 
 .featuredwork {
   padding: 112px 0 90px;
@@ -925,9 +1077,45 @@ button {
   height: 2000px; }
 
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width: 1920px) {
+  .welcome__content_text {
+    padding: 100px 118px; } }
+
+@media only screen and (max-width: 1750px) {
+  .top-banner__arrow_prev {
+    left: -70px; }
+  .top-banner__arrow_next {
+    right: -70px; } }
+
+@media only screen and (max-width: 1620px) {
+  .welcome__content_text {
+    padding: 50px 50px; } }
+
+@media only screen and (max-width: 1500px) {
+  .top-banner__block-arrows {
+    display: none; } }
+
+@media only screen and (max-width: 1460px) {
+  .welcome__flexbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .welcome__content {
+    width: 100%; }
+    .welcome__content_text {
+      padding: 50px 50px; } }
+
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .top-banner__slider_bg {
+    background: url(../img/content/banner-mini.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center; } }
+
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/

@@ -1,10 +1,10 @@
 .top-banner {
-	&__slider {
+	&__block-arrows {
 		position: relative
 	}
 	&__arrow {
+		cursor: pointer;
 		position: absolute;
-		top: 50%;
 		transform: translateY(-50%);
 		width: 70px;
 		height: 70px;
@@ -12,20 +12,99 @@
 		border-radius: 50%;
 		z-index: 99;
 		&_prev {
+			left: -200px;
 			&:after {
+				content: '';
+				display: block;
 				@include sprite($s-top-banner_arrow_prev);
+				margin: 25px auto;
 			}
 		}
 		&_next {
-			right: 0;
+			right: -200px;
 			&:after {
+				content: '';
+				display: block;
 				@include sprite($s-top-banner_arrow_next);
+				margin: 25px auto;
 			}
 		}
 	}
-	&__slider-block {
-		background: url(../img/content/banner.jpg) no-repeat;
-		background-size: cover;
-		background-position: center center;
+	&__slider {
+		&_bg-1 {
+			background: url(../img/content/banner.jpg) no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+		&_bg-2 {
+			background: url(../img/content/meduza.jpg) no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+		&_relative {
+			position: relative;
+		}
+		&_absolute {
+			position: absolute;
+			transform: translateY(-50%);
+		}
+		&_flexbox {
+			display: flex;
+			justify-content: space-between;
+			align-content: center;
+			box-sizing: content-box;
+		}
+	}
+	
+	&__content {
+		width: 100%;
+	}
+	
+	&__title {
+		display: block;
+		text-transform: uppercase;
+		font-family: $fontBold;
+		font-size: 4.875rem;
+		font-weight: 900;
+		color: $colorTitleWhite;
+		margin-left: 35px;
+		position: relative;
+		&:before {
+			content: '.';
+			display: block;
+			position: absolute;
+			left: -35px;
+		}
+		&_min {
+			display: block;
+			font-size: 2.625rem;
+			font-weight: 700;
+		}
+	}
+	
+	&__text {
+		display: block;
+		font-size: 1.875rem;
+		font-weight: 400;
+		text-align: center;
+		color: $colorTextWhite;
+		line-height: 1.5;
+		padding: 0px 50px;
+		position: relative;
+		margin-bottom: 95px;
+		&:after {
+			content: '';
+			display: block;
+			height: 1px;
+			width: 50px;
+			background: $bgTitleLine;
+			position: absolute;
+			left: 50%;
+			bottom: -44px;
+			transform: translateX(-50%);
+		}
+	}
+	&__link {
+		border-color: $bgBorderLink;
 	}
 }

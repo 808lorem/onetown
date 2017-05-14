@@ -1,0 +1,11 @@
+mixin top-banner__slide(bg_number, title, min_title, text, link)
+	.top-banner__slider_bg(class='top-banner__slider_bg-'+bg_number)
+		.container.top-banner__slider_relative
+			.top-banner__slider_absolute
+				.top-banner__slider_flexbox
+					.top-banner__content
+						span.top-banner__title= title
+							span.top-banner__title_min= min_title
+					.top-banner__content
+						span.top-banner__text= text
+						a(href="javascript:void(0);").top-banner__link.link__btn= link

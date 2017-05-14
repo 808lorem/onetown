@@ -22,7 +22,11 @@
 // Стили главной страницы
 @import 'page/_index';
 
+// Вверхний баннер слайдер
 @import 'modules/_top-banner';
+
+// Welcome 
+@import 'modules/_welcome';
 
 // featured work
 @import 'modules/_featuredwork';
