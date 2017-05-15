@@ -1,3 +1,13 @@
 section.services
-	.container.services__container
-		h2.services__title our services
+	h2.services__title our services
+	.main-container.services__main-container
+		.services__content
+			+services__block_top('mobile', 'Mobile apps', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe alias deserunt voluptas quo. Ullam recusandae ab molestias omnis repellat ea voluptatum sequi quam voluptate quasi, nemo hic commodi labore dolorum?')
+			+services__block_top('web', 'website design & coding', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe alias deserunt voluptas quo. Ullam recusandae ab molestias omnis repellat ea voluptatum sequi quam voluptate quasi, nemo hic commodi labore dolorum?')
+			+services__block_top('identity', 'Identity creation', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe alias deserunt voluptas quo. Ullam recusandae ab molestias omnis repellat ea voluptatum sequi quam voluptate quasi, nemo hic commodi labore dolorum?')
+		.services__content
+			+services__block_bottom('brand', 'Brand promotion', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe alias deserunt voluptas quo. Ullam recusandae ab molestias omnis repellat ea voluptatum sequi quam voluptate quasi, nemo hic commodi labore dolorum?')
+			+services__block_bottom('graphic', 'graphic design', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe alias deserunt voluptas quo. Ullam recusandae ab molestias omnis repellat ea voluptatum sequi quam voluptate quasi, nemo hic commodi labore dolorum?')
+			+services__block_bottom('motion', 'motion dynamics', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe alias deserunt voluptas quo. Ullam recusandae ab molestias omnis repellat ea voluptatum sequi quam voluptate quasi, nemo hic commodi labore dolorum?')
+			
+			

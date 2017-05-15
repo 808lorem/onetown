@@ -12,6 +12,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+		position: relative;
 	}
 	&__logo {
 		font-size: 1.875rem;
@@ -22,9 +23,24 @@
 			font-weight: 400;
 		}
 	}
+	&__btn-menu {
+		display: none;
+		@include sprite($s-header_menu);
+	}
 	&__nav {
 		font-size: 0.938rem;
 		font-weight: 700;
+		&.active {
+			display: flex;
+			justify-content: center;
+			position: absolute;
+			right: 0px;
+			left: 0;
+			top: 50px;
+			padding: 10px 30px;
+			width: 100%;
+			background: $bgHeader;
+		}
 	}
 	&__item {
 		margin: 0 16px;

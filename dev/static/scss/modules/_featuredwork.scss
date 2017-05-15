@@ -8,22 +8,29 @@
 	}
 	&__title {
 		color: $colorTitleDark;
+		margin-bottom: 160px;
 	}
 	&__slider {
 		width: 100%;
+		margin-bottom: 72px;
+		&_img {
+			width: 100%;
+			height: auto;
+		}
 		&_imac {
 			position: absolute;
 			top: 41px;
 			left: 43px;
 			width: 922px;
-			height: 504px;
 		}
 		&_iphone {
 			position: absolute;
 			top: 57px;
 			left: 17px;
 			width: 154px;
-			height: 273px;
+			.slick-dots {
+				display: none !important;
+			}
 		}
 	}
 	&__img {
@@ -37,6 +44,7 @@
 			background: url(../img/general/imac.png) no-repeat;
 			display: block;
 			position: relative;
+			background-size: contain;
 		}
 		&_iphone {
 			height: 100%;
@@ -52,5 +60,26 @@
 		left: -70px;
 		width: 184px;
 		height: 390px;
+	}
+	
+	.slick-dots {
+		top: -100px;
+		bottom: inherit;
+		li {
+			background: transparent;
+			border-radius: 50%;
+			border: 1px solid $bgDots;
+			&.slick-active {
+				background: $bgDots;
+			}
+			button:before {
+				opacity: 0;
+			}
+		}
+	}
+	
+	&__link {
+		color: $colorLinkGrey;
+		border-color: $bgBorderLinkGrey;
 	}
 }

@@ -1,20 +1,30 @@
 ;
 // Начинать писать отсюда!!!!
 $(document).ready(function(){
+	
+	$('.header__btn-menu').click(function() {
+		var w_w = $(window).width();
+		$('.header__nav').toggleClass('active');
+	});
+	
 	// установим обработчик события resize
 	$(window).resize(function(){
-		var h_w = $(window).height(),
-			pb_header = parseFloat( $('.header').css('padding-bottom') );
-			h_header = $('.header').height() + pb_header,
-			h_toBannerFlexbox = $('.top-banner__slider_flexbox').height();
-  console.log(pb_header);
-  
-		if(h_w < (h_header + h_toBannerFlexbox)) {
-			h_w = h_header + h_toBannerFlexbox
+		var w_w = $(window).width();
+		
+		if(w_w > 768) {
+			$('.header__nav').removeClass('active');
 		}
+		
+		
+		var h_w = $(window).height();
+		if (h_w < 720) {
+			h_w = 720;
+		}
+		
 		$('.top-banner__slider_bg').css('height', h_w);
 		$('.top-banner__arrow').css('top', h_w/2);
 		$('.top-banner__slider_absolute').css('top', h_w/2);
+		
 	});
 
 	// вызовем событие resize
@@ -59,4 +69,19 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 	});
 	
+	
+	$('.services__block').click(function() {
+		var className = 'active'
+		
+		var arr = $(this).attr('class').split(' ');
+		
+		for (var i = 0; i < arr.length; i++) {
+			if (arr[i] === className) {
+				$('.services__block.'+className).removeClass(className);
+			} else {
+				$('.services__block.'+className).removeClass(className);
+				$(this).addClass(className);
+			}
+		}
+	});
 });

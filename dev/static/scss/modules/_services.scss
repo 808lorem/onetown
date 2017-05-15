@@ -1,6 +1,294 @@
 .services {
-	padding: 91px 0;
+	padding: 91px 0 0;
 	&__title {
 		color: $colorTitleDark;
+	}
+	&__content {
+		display: flex;
+	}
+	&__block {
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		width: 640px;
+		height: 440px;
+		position: relative;
+		float: left;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) rotate(45deg);
+			width: 20px;
+			height: 20px;
+		}
+		&_text {
+			width: 50%;
+			padding: 109px 20px;
+		}
+		&_title {
+			display: block;
+			color: $colorTitleWhite;
+			&:after {
+				background: $bgTitleLineWhite;
+			}
+		}
+		&_descr {
+			display: none;
+			text-align: center;
+		}
+	}
+	
+	&__icon {
+		width: 50%;
+		background: $bgServicesMain;
+		position: relative;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		&_mobile {
+			&:after {
+				@include sprite($s-services_mobile);
+			}
+		}
+		&_web {
+			&:after {
+				@include sprite($s-services_web);
+			}
+		}
+		&_identity {
+			&:after {
+				@include sprite($s-services_identity);
+			}
+		}
+		&_brand {
+			&:after {
+				@include sprite($s-services_brand);
+			}
+		}
+		&_graphic {
+			&:after {
+				@include sprite($s-services_graphic);
+			}
+		}
+		&_motion {
+			&:after {
+				@include sprite($s-services_motion);
+			}
+		}
+	}
+}
+.services {
+	&__block {
+		&_text {
+			&_mobile {
+				background: $bgServicesMobile;
+			}
+			&_web {
+				background: $bgServicesWeb;
+			}
+			&_identity {
+				background: $bgServicesIdentity;
+			}
+			&_brand {
+				background: $bgServicesBrand;
+			}
+			&_graphic {
+				background: $bgServicesGraphic;
+			}
+			&_motion {
+				background: $bgServicesMotion;
+			}
+		}
+	}
+}
+.services {
+	&__block {
+		&_mobile {
+			&:after {
+				background: $bgServicesMobile;
+			}
+		}
+		&_web {
+			&:after {
+				background: $bgServicesWeb;
+			}
+		}
+		&_identity {
+			&:after {
+				background: $bgServicesIdentity;
+			}
+		}
+		&_brand {
+			&:after {
+				background: $bgServicesBrand;
+			}
+		}
+		&_graphic {
+			&:after {
+				background: $bgServicesGraphic;
+			}
+		}
+		&_motion {
+			&:after {
+				background: $bgServicesMotion;
+			}
+		}
+	}
+}
+
+.services {
+	&__block {
+		&.active {
+			.services {
+				&__block {
+					&_title {
+						display: none;
+					}
+					&_descr {
+						display: block;
+						&_mobile {
+							color: $bgServicesMobile;
+						}
+						&_web {
+							color: $bgServicesWeb;
+						}
+						&_identity {
+							color: $bgServicesIdentity;
+						}
+						&_brand {
+							color: $bgServicesBrand;
+						}
+						&_graphic {
+							color: $bgServicesGraphic;
+						}
+						&_motion {
+							color: $bgServicesMotion;
+						}
+					}
+				}
+			}
+		}
+		&_mobile {
+			&.active {
+				.services {
+					&__block {
+						&_text {
+							background: $bgServicesMain;
+						}
+					}
+					&__icon {
+						background: $bgServicesMobile;
+						&_mobile {
+							&:after {
+								@include sprite($s-services_mobile_white);
+							}
+						}
+					}
+				}
+			}
+		}
+		&_web {
+			&.active {
+				.services {
+					&__block {
+						&_text {
+							background: $bgServicesMain;
+						}
+					}
+					&__icon {
+						background: $bgServicesWeb;
+						&_web {
+							&:after {
+								@include sprite($s-services_web_white);
+							}
+						}
+					}
+				}
+			}
+		}
+		&_identity {
+			&.active {
+				.services {
+					&__block {
+						&_text {
+							background: $bgServicesMain;
+						}
+					}
+					&__icon {
+						background: $bgServicesIdentity;
+						&_identity {
+							&:after {
+								@include sprite($s-services_identity_white);
+							}
+						}
+					}
+				}
+			}
+		}
+		&_brand {
+			&.active {
+				.services {
+					&__block {
+						&_text {
+							background: $bgServicesMain;
+						}
+					}
+					&__icon {
+						background: $bgServicesBrand;
+						&_brand {
+							&:after {
+								@include sprite($s-services_brand_white);
+							}
+						}
+					}
+				}
+			}
+		}
+		&_graphic {
+			&.active {
+				.services {
+					&__block {
+						&_text {
+							background: $bgServicesMain;
+						}
+					}
+					&__icon {
+						background: $bgServicesGraphic;
+						&_graphic {
+							&:after {
+								@include sprite($s-services_graphic_white);
+							}
+						}
+					}
+				}
+			}
+		}
+		&_motion {
+			&.active {
+				.services {
+					&__block {
+						&_text {
+							background: $bgServicesMain;
+						}
+					}
+					&__icon {
+						background: $bgServicesMotion;
+						&_motion {
+							&:after {
+								@include sprite($s-services_motion_white);
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

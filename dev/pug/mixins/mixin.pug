@@ -9,3 +9,32 @@ mixin top-banner__slide(bg_number, title, min_title, text, link)
 					.top-banner__content
 						span.top-banner__text= text
 						a(href="javascript:void(0);").top-banner__link.link__btn= link
+						
+						
+						
+mixin services__block_top(className, title, descr)
+	.services__block(class="services__block_"+ className)
+		.services__icon(class="services__icon_"+ className)
+		.services__block_text(class="services__block_text_"+ className)
+			h2.services__block_title= title
+			span.services__block_descr(class="services__block_descr_"+ className)= descr
+			
+mixin services__block_bottom(className, title, descr)
+	.services__block(class="services__block_"+ className)
+		.services__block_text(class="services__block_text_"+ className)
+			h2.services__block_title= title
+			span.services__block_descr(class="services__block_descr_"+ className)= descr
+		.services__icon(class="services__icon_"+ className)
+		
+		
+mixin about__block(imgNumber, title)
+	.about__block
+		header.about__header
+			img(src="static/img/content/about__img-"+imgNumber+".jpg" alt=""+title).about__img
+		footer.about__footer
+			span.about__block_title= title
+			.about__social
+				a(href="javascript:void(0);").about__link.about__link_skype
+				a(href="javascript:void(0);").about__link.about__link_dribbble
+				a(href="javascript:void(0);").about__link.about__link_twitter
+				a(href="javascript:void(0);").about__link.about__link_google

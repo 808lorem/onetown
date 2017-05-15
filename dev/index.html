@@ -11,13 +11,13 @@
   <meta name="keywords" content="">
   <link rel="stylesheet" type="text/css" href="static/fonts/fonts.css">
   <link rel="stylesheet" type="text/css" href="static/css/main.css">
-  <title>Главная страница
+  <title>Main page
   </title>
 </head>
 <body>
   <div class="wrapper">
     <header class="header" id="header">
-      <div class="container header__container"><a class="scroll-link header__logo" href="#header">. one<span class="header__logo_regular">Town</span></a>
+      <div class="container header__container"><a class="scroll-link header__logo" href="#header">. one<span class="header__logo_regular">Town</span></a><a class="header__btn-menu"></a>
         <nav class="header__nav"><a class="scroll-link header__item" href="javascript:void(0);">about us</a><a class="scroll-link header__item" href="javascript:void(0);">work</a><a class="scroll-link header__item" href="javascript:void(0);">services</a><a class="scroll-link header__item" href="javascript:void(0);">blog</a><a class="scroll-link header__item" href="javascript:void(0);">careers</a><a class="scroll-link header__item" href="javascript:void(0);">contact</a></nav>
       </div>
     </header>
@@ -53,9 +53,102 @@
     </section>
     <section class="welcome main-container">
       <div class="welcome__flexbox">
-        <div class="welcome__content"><img class="welcome__img" src="static/img/general/welcome.jpg" alt="welcome"></div>
+        <div class="welcome__content welcome__content_img"><img class="welcome__img" src="static/img/general/welcome.jpg" alt="welcome"></div>
         <div class="welcome__content welcome__content_text">
           <h2 class="welcome__title">Proin sodales eu massa vitae porta</h2><span class="welcome__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper. Sed lobortis magna in faucibus commodo. Ut purus odio, gravida sit amet laoreet at, dictum et urna. Sed egestas mauris tellus, vitae facilisis nisi pretium imperdiet. Donec dapibus mi a mauris rhoncus, a vehicula nibh porttitor. Duis nisl magna, sodales vel felis eu, luctus facilisis nibh. Mauris placerat viverra lectus at ornare. Maecenas malesuada egestas consequat. Donec et aliquam eros. Sed pulvinar nunc quis tristique condimentum. Sed nec metus lorem.</span><a class="welcome__link link__btn" href="javascript:void(0);">read more</a>
+        </div>
+      </div>
+    </section>
+    <section class="featuredwork">
+      <div class="container featuredwork__container">
+        <h2 class="featuredwork__title">featured works</h2>
+        <div class="featuredwork__slider">
+          <div class="featuredwork__img">
+            <div class="featuredwork__img_imac">
+              <div class="featuredwork__slider_imac">
+                <div class="js-slick__featuredwork"><img class="featuredwork__slider_img" src="static/img/content/slider-imac.png" alt="slider-imac"><img class="featuredwork__slider_img" src="static/img/content/slider-imac.png" alt="slider-imac"></div>
+              </div>
+              <div class="featuredwork__iphone_position">
+                <div class="featuredwork__img_iphone">
+                  <div class="featuredwork__slider_iphone">
+                    <div class="js-slick__featuredwork"><img class="featuredwork__slider_img" src="static/img/content/slider-iphone.png" alt="slider-imac"><img class="featuredwork__slider_img" src="static/img/content/slider-iphone.png" alt="slider-imac"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><a class="featuredwork__link link__btn" href="javascript:void(0);">see all works</a>
+      </div>
+    </section>
+    <section class="services">
+      <h2 class="services__title">our services</h2>
+      <div class="main-container services__main-container">
+        <div class="services__content">
+            <div class="services__block services__block_mobile">
+              <div class="services__icon services__icon_mobile"></div>
+              <div class="services__block_text services__block_text_mobile">
+                <h2 class="services__block_title">Mobile apps</h2><span class="services__block_descr services__block_descr_mobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe alias deserunt voluptas quo. Ullam recusandae ab molestias omnis repellat ea voluptatum sequi quam voluptate quasi, nemo hic commodi labore dolorum?</span>
+              </div>
+            </div>
+            <div class="services__block services__block_web">
+              <div class="services__icon services__icon_web"></div>
+              <div class="services__block_text services__block_text_web">
+                <h2 class="services__block_title">website design &amp; coding</h2><span class="services__block_descr services__block_descr_web">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe alias deserunt voluptas quo. Ullam recusandae ab molestias omnis repellat ea voluptatum sequi quam voluptate quasi, nemo hic commodi labore dolorum?</span>
+              </div>
+            </div>
+            <div class="services__block services__block_identity">
+              <div class="services__icon services__icon_identity"></div>
+              <div class="services__block_text services__block_text_identity">
+                <h2 class="services__block_title">Identity creation</h2><span class="services__block_descr services__block_descr_identity">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe alias deserunt voluptas quo. Ullam recusandae ab molestias omnis repellat ea voluptatum sequi quam voluptate quasi, nemo hic commodi labore dolorum?</span>
+              </div>
+            </div>
+        </div>
+        <div class="services__content">
+            <div class="services__block services__block_brand">
+              <div class="services__block_text services__block_text_brand">
+                <h2 class="services__block_title">Brand promotion</h2><span class="services__block_descr services__block_descr_brand">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe alias deserunt voluptas quo. Ullam recusandae ab molestias omnis repellat ea voluptatum sequi quam voluptate quasi, nemo hic commodi labore dolorum?</span>
+              </div>
+              <div class="services__icon services__icon_brand"></div>
+            </div>
+            <div class="services__block services__block_graphic">
+              <div class="services__block_text services__block_text_graphic">
+                <h2 class="services__block_title">graphic design</h2><span class="services__block_descr services__block_descr_graphic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe alias deserunt voluptas quo. Ullam recusandae ab molestias omnis repellat ea voluptatum sequi quam voluptate quasi, nemo hic commodi labore dolorum?</span>
+              </div>
+              <div class="services__icon services__icon_graphic"></div>
+            </div>
+            <div class="services__block services__block_motion">
+              <div class="services__block_text services__block_text_motion">
+                <h2 class="services__block_title">motion dynamics</h2><span class="services__block_descr services__block_descr_motion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe alias deserunt voluptas quo. Ullam recusandae ab molestias omnis repellat ea voluptatum sequi quam voluptate quasi, nemo hic commodi labore dolorum?</span>
+              </div>
+              <div class="services__icon services__icon_motion"></div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="about main-container">
+      <div class="about__padding">
+        <div class="container">
+          <h2 class="about__title">about us<span class="about__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper. Sed lobortis magna in faucibus commodo. Ut purus odio, gravida sit amet laoreet at, dictum et urna. Sed egestas mauris tellus, vitae facilisis nisi pretium imperdiet. Donec dapibus mi a mauris rhoncus, a vehicula nibh porttitor.</span></h2>
+          <div class="about__flexbox">
+              <div class="about__block">
+                <header class="about__header"><img class="about__img" src="static/img/content/about__img-1.jpg" alt="joann henry doe"></header>
+                <footer class="about__footer"><span class="about__block_title">joann henry doe</span>
+                  <div class="about__social"><a class="about__link about__link_skype" href="javascript:void(0);"></a><a class="about__link about__link_dribbble" href="javascript:void(0);"></a><a class="about__link about__link_twitter" href="javascript:void(0);"></a><a class="about__link about__link_google" href="javascript:void(0);"></a></div>
+                </footer>
+              </div>
+              <div class="about__block">
+                <header class="about__header"><img class="about__img" src="static/img/content/about__img-2.jpg" alt="Christropher london"></header>
+                <footer class="about__footer"><span class="about__block_title">Christropher london</span>
+                  <div class="about__social"><a class="about__link about__link_skype" href="javascript:void(0);"></a><a class="about__link about__link_dribbble" href="javascript:void(0);"></a><a class="about__link about__link_twitter" href="javascript:void(0);"></a><a class="about__link about__link_google" href="javascript:void(0);"></a></div>
+                </footer>
+              </div>
+              <div class="about__block">
+                <header class="about__header"><img class="about__img" src="static/img/content/about__img-3.jpg" alt="lovy puppy"></header>
+                <footer class="about__footer"><span class="about__block_title">lovy puppy</span>
+                  <div class="about__social"><a class="about__link about__link_skype" href="javascript:void(0);"></a><a class="about__link about__link_dribbble" href="javascript:void(0);"></a><a class="about__link about__link_twitter" href="javascript:void(0);"></a><a class="about__link about__link_google" href="javascript:void(0);"></a></div>
+                </footer>
+              </div>
+          </div>
         </div>
       </div>
     </section>

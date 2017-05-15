@@ -10,6 +10,7 @@
 		padding: 0 119px;
 		&:after {
 			bottom: -30px;
+			background: $bgTitleLineWhite;
 		}
 	}
 	&__descr {
@@ -20,4 +21,75 @@
 		line-height: 1.875;
 		margin-top: 27px;
 	}
+	
+	&__flexbox {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__footer {
+		padding: 19px 0 25px;
+		border: 1px solid $bgBorderAbout;
+		border-top: none;
+	}
+	&__block {
+		&_title {
+			display: block;
+			font-family: $fontBold;
+			font-size: 1rem;
+			font-weight: 700;
+			text-align: center;
+			color: $colorTitleWhite;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			margin-bottom: 23px;
+		}
+	}
+	&__img {
+		height: 251px;
+		width: 350px;
+		object-fit: none;
+		object-position: 50% 50%;
+		border: 1px solid $bgBorderAbout;
+	}
+	&__social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	&__link {
+		display: inline-block;
+		margin: 0 15px;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&_skype {
+			@include sprite($s-about__icon_skype);
+			&:hover {
+				@include sprite($s-about__icon_skype_hover);
+			}
+		}
+		&_dribbble {
+			@include sprite($s-about__icon_dribbble);
+			&:hover {
+				@include sprite($s-about__icon_dribbble_hover);
+			}
+		}
+		&_twitter {
+			@include sprite($s-about__icon_twitter);
+			&:hover {
+				@include sprite($s-about__icon_twitter_hover);
+			}
+		}
+		&_google {
+			@include sprite($s-about__icon_google);
+			&:hover {
+				@include sprite($s-about__icon_google_hover);
+			}
+		}
+	}
+	
 }
