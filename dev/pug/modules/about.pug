@@ -3,7 +3,10 @@ section.about.main-container
 		.container
 			h2.about__title about us
 				span.about__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper. Sed lobortis magna in faucibus commodo. Ut purus odio, gravida sit amet laoreet at, dictum et urna. Sed egestas mauris tellus, vitae facilisis nisi pretium imperdiet. Donec dapibus mi a mauris rhoncus, a vehicula nibh porttitor.
-			.about__flexbox
-				+about__block('1', 'joann henry doe')
-				+about__block('2', 'Christropher london')
-				+about__block('3', 'lovy puppy')
+			.about__box
+				.about__arrow.about__arrow_prev
+				.about__arrow.about__arrow_next
+				.js-slick__about
+					+about__block('1', 'joann henry doe')
+					+about__block('2', 'Christropher london')
+					+about__block('3', 'lovy puppy')

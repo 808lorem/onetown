@@ -21,10 +21,27 @@
 		line-height: 1.875;
 		margin-top: 27px;
 	}
+	&__box {
+		position: relative;
+	}
+	&__arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 1;
+		&_prev {
+			left: 0;
+			@include sprite($s-arrow_prev);
+		}
+		&_next {
+			@include sprite($s-arrow_next);
+			right: 0;
+		}
+	}
 	
-	&__flexbox {
-		display: flex;
-		justify-content: space-between;
+	&__wrap {
+		width: 350px;
+		margin: 0 auto;
 	}
 	&__footer {
 		padding: 19px 0 25px;
