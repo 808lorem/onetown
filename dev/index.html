@@ -16,11 +16,13 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="header" id="header">
-      <div class="container header__container"><a class="scroll-link header__logo" href="#header">. one<span class="header__logo_regular">Town</span></a><a class="header__btn-menu"></a>
-        <nav class="header__nav"><a class="scroll-link header__item" href="javascript:void(0);">about us</a><a class="scroll-link header__item" href="javascript:void(0);">work</a><a class="scroll-link header__item" href="javascript:void(0);">services</a><a class="scroll-link header__item" href="javascript:void(0);">blog</a><a class="scroll-link header__item" href="javascript:void(0);">careers</a><a class="scroll-link header__item" href="javascript:void(0);">contact</a></nav>
-      </div>
-    </header>
+    <div id="header">
+      <header class="header">
+        <div class="container header__container"><a class="scroll-link logo" href="#header">. one<span class="logo__regular">Town</span></a><a class="header__btn-menu"></a>
+          <nav class="header__nav nav"><a class="scroll-link nav__item header__item" href="#about">about us</a><a class="scroll-link nav__item header__item" href="javascript:void(0);">work</a><a class="scroll-link nav__item header__item" href="#services">services</a><a class="scroll-link nav__item header__item" href="javascript:void(0);">blog</a><a class="scroll-link nav__item header__item" href="javascript:void(0);">careers</a><a class="scroll-link nav__item header__item" href="javascript:void(0);">contact</a></nav>
+        </div>
+      </header>
+    </div>
     <section class="top-banner">
       <div class="top-banner__slider">
         <div class="container top-banner__block-arrows">
@@ -80,7 +82,7 @@
         </div><a class="featuredwork__link link__btn" href="javascript:void(0);">see all works</a>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <h2 class="services__title">our services</h2>
       <div class="main-container services__main-container">
         <div class="services__content">
@@ -125,35 +127,67 @@
         </div>
       </div>
     </section>
-    <section class="about main-container">
+    <section class="about main-container" id="about">
       <div class="about__padding">
         <div class="container">
           <h2 class="about__title">about us<span class="about__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper. Sed lobortis magna in faucibus commodo. Ut purus odio, gravida sit amet laoreet at, dictum et urna. Sed egestas mauris tellus, vitae facilisis nisi pretium imperdiet. Donec dapibus mi a mauris rhoncus, a vehicula nibh porttitor.</span></h2>
-          <div class="about__flexbox">
-              <div class="about__block">
-                <header class="about__header"><img class="about__img" src="static/img/content/about__img-1.jpg" alt="joann henry doe"></header>
-                <footer class="about__footer"><span class="about__block_title">joann henry doe</span>
-                  <div class="about__social"><a class="about__link about__link_skype" href="javascript:void(0);"></a><a class="about__link about__link_dribbble" href="javascript:void(0);"></a><a class="about__link about__link_twitter" href="javascript:void(0);"></a><a class="about__link about__link_google" href="javascript:void(0);"></a></div>
-                </footer>
-              </div>
-              <div class="about__block">
-                <header class="about__header"><img class="about__img" src="static/img/content/about__img-2.jpg" alt="Christropher london"></header>
-                <footer class="about__footer"><span class="about__block_title">Christropher london</span>
-                  <div class="about__social"><a class="about__link about__link_skype" href="javascript:void(0);"></a><a class="about__link about__link_dribbble" href="javascript:void(0);"></a><a class="about__link about__link_twitter" href="javascript:void(0);"></a><a class="about__link about__link_google" href="javascript:void(0);"></a></div>
-                </footer>
-              </div>
-              <div class="about__block">
-                <header class="about__header"><img class="about__img" src="static/img/content/about__img-3.jpg" alt="lovy puppy"></header>
-                <footer class="about__footer"><span class="about__block_title">lovy puppy</span>
-                  <div class="about__social"><a class="about__link about__link_skype" href="javascript:void(0);"></a><a class="about__link about__link_dribbble" href="javascript:void(0);"></a><a class="about__link about__link_twitter" href="javascript:void(0);"></a><a class="about__link about__link_google" href="javascript:void(0);"></a></div>
-                </footer>
-              </div>
+          <div class="about__box">
+            <div class="about__arrow about__arrow_prev"></div>
+            <div class="about__arrow about__arrow_next"></div>
+            <div class="js-slick__about">
+                <div class="about__block">
+                  <div class="about__wrap">
+                    <header class="about__header"><img class="about__img" src="static/img/content/about__img-1.jpg" alt="joann henry doe"></header>
+                    <footer class="about__footer"><span class="about__block_title">joann henry doe</span>
+                      <div class="about__social"><a class="about__link about__link_skype" href="javascript:void(0);" target="_blank"></a><a class="about__link about__link_dribbble" href="javascript:void(0);" target="_blank"></a><a class="about__link about__link_twitter" href="javascript:void(0);" target="_blank"></a><a class="about__link about__link_google" href="javascript:void(0);" target="_blank"></a></div>
+                    </footer>
+                  </div>
+                </div>
+                <div class="about__block">
+                  <div class="about__wrap">
+                    <header class="about__header"><img class="about__img" src="static/img/content/about__img-2.jpg" alt="Christropher london"></header>
+                    <footer class="about__footer"><span class="about__block_title">Christropher london</span>
+                      <div class="about__social"><a class="about__link about__link_skype" href="javascript:void(0);" target="_blank"></a><a class="about__link about__link_dribbble" href="javascript:void(0);" target="_blank"></a><a class="about__link about__link_twitter" href="javascript:void(0);" target="_blank"></a><a class="about__link about__link_google" href="javascript:void(0);" target="_blank"></a></div>
+                    </footer>
+                  </div>
+                </div>
+                <div class="about__block">
+                  <div class="about__wrap">
+                    <header class="about__header"><img class="about__img" src="static/img/content/about__img-3.jpg" alt="lovy puppy"></header>
+                    <footer class="about__footer"><span class="about__block_title">lovy puppy</span>
+                      <div class="about__social"><a class="about__link about__link_skype" href="javascript:void(0);" target="_blank"></a><a class="about__link about__link_dribbble" href="javascript:void(0);" target="_blank"></a><a class="about__link about__link_twitter" href="javascript:void(0);" target="_blank"></a><a class="about__link about__link_google" href="javascript:void(0);" target="_blank"></a></div>
+                    </footer>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="testimonials">
+      <div class="container testimonials__container">
+        <h2 class="testimonials__title">testimonials</h2>
+        <p class="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper. Sed lobortis magna in faucibus commodo. Ut purus odio, gravida sit amet laoreet at, dictum et urna. Sed egestas mauris tellus, vitae facilisis nisi pretium imperdiet. Donec dapibus mi a mauris rhoncus, a vehicula nibh porttitor.</p><span class="testimonials__author">John Henry Doe, ABC Company, St. Louis</span>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="container subscribe__container">
+        <h2 class="subscribe__title">subscribe to our newsletter</h2>
+        <form class="subscribe__form" action="#" method="post">
+          <input class="subscribe__input" type="email" name="useremail" placeholder="Enter Your Email Address">
+          <input class="subscribe__input subscribe__input_btn" type="submit" value="submit">
+        </form><span class="logo subscribe__logo">. one<span class="logo__regular">Town</span></span>
+        <div class="subscribe__social"><a class="subscribe__link subscribe__link_twitter" href="javascript:void(0);"></a><a class="subscribe__link subscribe__link_facebook" href="javascript:void(0);"></a><a class="subscribe__link subscribe__link_pinterest" href="javascript:void(0);"></a><a class="subscribe__link subscribe__link_linkedin" href="javascript:void(0);"></a><a class="subscribe__link subscribe__link_skype" href="javascript:void(0);"></a></div>
+      </div>
+    </section>
   </div>
-  <footer class="footer"></footer><!--[if lt IE 9]>
+  <footer class="footer">
+    <div class="container footer__container">
+      <nav class="footer__nav"><a class="scroll-link nav__item footer__item footer__link" href="#about">about us</a><a class="scroll-link nav__item footer__item footer__link" href="javascript:void(0);">work</a><a class="scroll-link nav__item footer__item footer__link" href="#services">services</a><a class="scroll-link nav__item footer__item footer__link" href="javascript:void(0);">blog</a><a class="scroll-link nav__item footer__item footer__link" href="javascript:void(0);">careers</a><a class="scroll-link nav__item footer__item footer__link" href="javascript:void(0);">contact</a></nav>
+      <div class="footer__contacts"><a class="footer__email footer__link" href="mailto:info@domain.com">email: 
+          <spa class="footer__email_transform">info@domain.com</spa></a><a class="footer__phone footer__link" href="tel:1234567890">St. Louis:   (123)  456  7890</a></div>
+    </div>
+  </footer><!--[if lt IE 9]>
 <script src="static/libs/html5shiv/es5-shim.min.js"></script>
 <script src="static/libs/html5shiv/html5shiv.min.js"></script>
 <script src="static/libs/html5shiv/html5shiv-printshiv.min.js"></script>

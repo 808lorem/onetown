@@ -29,12 +29,13 @@ mixin services__block_bottom(className, title, descr)
 		
 mixin about__block(imgNumber, title)
 	.about__block
-		header.about__header
-			img(src="static/img/content/about__img-"+imgNumber+".jpg" alt=""+title).about__img
-		footer.about__footer
-			span.about__block_title= title
-			.about__social
-				a(href="javascript:void(0);").about__link.about__link_skype
-				a(href="javascript:void(0);").about__link.about__link_dribbble
-				a(href="javascript:void(0);").about__link.about__link_twitter
-				a(href="javascript:void(0);").about__link.about__link_google
+		.about__wrap
+			header.about__header
+				img(src="static/img/content/about__img-"+imgNumber+".jpg" alt=""+title).about__img
+			footer.about__footer
+				span.about__block_title= title
+				.about__social
+					a(href="javascript:void(0);" target="_blank").about__link.about__link_skype
+					a(href="javascript:void(0);" target="_blank").about__link.about__link_dribbble
+					a(href="javascript:void(0);" target="_blank").about__link.about__link_twitter
+					a(href="javascript:void(0);" target="_blank").about__link.about__link_google

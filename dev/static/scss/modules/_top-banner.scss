@@ -16,7 +16,7 @@
 			&:after {
 				content: '';
 				display: block;
-				@include sprite($s-top-banner_arrow_prev);
+				@include sprite($s-arrow_prev);
 				margin: 25px auto;
 			}
 		}
@@ -25,7 +25,7 @@
 			&:after {
 				content: '';
 				display: block;
-				@include sprite($s-top-banner_arrow_next);
+				@include sprite($s-arrow_next);
 				margin: 25px auto;
 			}
 		}
@@ -57,7 +57,7 @@
 	}
 	
 	&__content {
-		width: 100%;
+		width: 50%;
 	}
 	
 	&__title {
@@ -97,7 +97,7 @@
 			display: block;
 			height: 1px;
 			width: 50px;
-			background: $bgTitleLine;
+			background: $bgTitleLineWhite;
 			position: absolute;
 			left: 50%;
 			bottom: -44px;
