@@ -1,3 +1,35 @@
 .footer {
-	height: 2000px;
+	background: $bgFooter;
+	padding: 60px 0 58px;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		font-family: $fontBold;
+		font-size: 0.875rem;
+		font-weight: 700;	
+	}
+	&__link {
+		color: $colorFooter;
+		&:hover,
+		&:focus,
+		&:visited {
+			color: $colorFooter;
+		}
+	}
+	&__contacts {
+		font-size: 0.875rem;
+		font-weight: 400;
+	}
+	&__email {
+		font-family: $mainFont;
+		&_transform {
+			text-transform: none;
+		}
+	}
+	&__phone {
+		margin-left: 90px;
+		font-family: $mainFont;
+	}
 }
