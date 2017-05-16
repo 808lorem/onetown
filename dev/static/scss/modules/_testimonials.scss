@@ -1,0 +1,26 @@
+.testimonials {
+	padding: 81px 0 158px;
+	&__container {
+		padding: 0 130px;
+	}
+	&__title {
+		color: $colorTitleGrey;
+	}
+	&__text {
+		font-size: 1.25rem;
+		font-weight: 400;
+		line-height: 1.8;
+		text-align: center;
+		color: $colorTextGrey;
+		margin-bottom: 75px;
+	}
+	&__author {
+		display: block;
+		text-align: center;
+		color: black;
+		font-size: 1.25rem;
+		font-weight: 700;
+		line-height: 1.8;
+		font-family: $fontBold;
+	}
+}
