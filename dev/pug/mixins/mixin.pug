@@ -39,3 +39,9 @@ mixin about__block(imgNumber, title)
 					a(href="javascript:void(0);" target="_blank").about__link.about__link_dribbble
 					a(href="javascript:void(0);" target="_blank").about__link.about__link_twitter
 					a(href="javascript:void(0);" target="_blank").about__link.about__link_google
+					
+					
+mixin contactus__checkbox_wrap(title, className)
+	.contactus__checkbox_wrap
+		input(type="checkbox" name=""+className id='checkbox_'+className).contactus__checkbox_input
+		label(for='checkbox_'+className class='contactus__checkbox_label_'+className).contactus__checkbox_label= title

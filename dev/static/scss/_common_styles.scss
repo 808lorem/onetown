@@ -80,6 +80,10 @@ button {
 	box-sizing: border-box;
 }
 
+*:focus {
+	outline: none;
+}
+
 .hide {
 	display: none;
 }
@@ -212,9 +216,14 @@ button {
 			top: 0;
 			right: -20px;
 		}
+		&.active {
+			color: #989795;
+			&:after {
+				color: $colorLinkWhite;
+			}
+		}
 	}
 }
-	
 
 .link__btn {
 	display: block;

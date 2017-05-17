@@ -11,12 +11,12 @@ include doctypeIE
 	body
 		include ../mixins/mixin
 		.wrapper
-			include ../modules/header
 			block content
 		include ../modules/footer
         
 		include jsIE
 		script(src='static/js/jquery.min.js')
+		script(src='static/js/jquery-ui.min.js')
 		script(src="static/js/libs.min.js")
 		script(src="static/js/main.js")
 </html>
