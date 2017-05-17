@@ -1,0 +1,36 @@
+section.contactus
+	.container.contactus__container
+		h2.contactus__title contact us
+		.contactus__flexbox
+			.contactus__block
+				h3.contactus__block_title your details
+				form(action="#" method="post").contactus__form
+					.contactus__form_inputbox
+						input(type="text" name="username" placeholder="name").contactus__form_input.contactus__form_input_mb
+						input(type="email" name="useremail" placeholder="email address").contactus__form_input
+						input(type="text" name="companyname" placeholder="Company name").contactus__form_input
+					.contactus__rangebox
+						.contactus__form_rangebox
+							.contactus__form_flexbox
+								h3.contactus__block_title.contactus__form_title project estimate
+								input(type="text" id="price" readonly name="project_estimate").contactus__form_input_range
+							#range-price
+						.contactus__form_rangebox
+							.contactus__form_flexbox
+								h3.contactus__block_title.contactus__form_title time frame
+								input(type="text" id="time" readonly name="time_frame").contactus__form_input_range
+							#range-time
+					.contactus__form_checkbox
+						h3.contactus__block_title.contactus__checkbox_title project area
+						.contactus__checkbox
+							+contactus__checkbox_wrap('Mobile Apps', 'mobile')
+							+contactus__checkbox_wrap('Web  Design & Development', 'web')
+							+contactus__checkbox_wrap('Identity Creation', 'identity')
+						.contactus__checkbox
+							+contactus__checkbox_wrap('Brand Promotion', 'brand')
+							+contactus__checkbox_wrap('Graphic Design', 'graphic')
+							+contactus__checkbox_wrap('Motion Dynamics', 'motion')
+							
+							
+							
+							
