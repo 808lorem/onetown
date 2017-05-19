@@ -36,20 +36,6 @@ $(document).ready(function(){
 	// вызовем событие resize
 	$(window).resize();
 	
-	$('.scroll-link').click(function() {
-		
-	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		var target = $(this.hash);
-		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		if (target.length) {
-		$('html, body').animate({
-		  scrollTop: target.offset().top - heightHeader + 1
-		}, 1000);
-		return false;
-		}
-	  }
-	});
-	
 	jQuery(function($) {
 		$(window).scroll(function(){
 			if($(this).scrollTop() > 1){
@@ -85,7 +71,7 @@ $(document).ready(function(){
 
 		$(document).on("scroll", onScroll);
 
-		$("a[href^=#]").click(function(e){
+		$('a[href^="#"]').click(function(e){
 			e.preventDefault();
 
 			$(document).off("scroll");
@@ -95,8 +81,8 @@ $(document).ready(function(){
 			var target = $(hash);
 
 			$("html, body").animate({
-				scrollTop: target.offset().top
-			}, 500, function(){
+				scrollTop: target.offset().top - heightHeader + 1
+			}, 1000, function(){
 				window.location.hash = hash;
 				$(document).on("scroll", onScroll);
 			});
@@ -111,20 +97,14 @@ $(document).ready(function(){
 		speed: 300,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-//		responsive: [{
-//			breakpoint: 1500,
-//			settings: {
-//				
-//    		}
-//    	}]
 	});
 	
 	$('.js-slick__featuredwork').slick({
 		dots: true,
 		arrows: false,
 		asNavFor: '.js-slick__featuredwork',
-//		autoplay: true,
-//		autoplaySpeed: 2000,
+		autoplay: true,
+		autoplaySpeed: 2000,
 		speed: 300,
 		slidesToShow: 1,
 		slidesToScroll: 1,
