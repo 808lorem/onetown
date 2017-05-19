@@ -238,4 +238,13 @@ button {
 	font-weight: 700;
 	text-align: center;
 	padding: 17px;
+	background: transparent;
+	text-transform: uppercase;
+	color: $colorLinkGrey;
+	border-color: $bgBorderLinkGrey;
+	&:hover,
+	&:focus,
+	&:visited {
+		color: $colorLinkGrey;
+	}
 }

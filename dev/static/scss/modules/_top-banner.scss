@@ -106,5 +106,11 @@
 	}
 	&__link {
 		border-color: $bgBorderLink;
+		color: $colorLinkWhite;
+		&:hover,
+		&:focus,
+		&:visited {
+			color: $colorLinkWhite;
+		}
 	}
 }
