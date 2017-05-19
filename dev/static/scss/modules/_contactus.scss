@@ -1,9 +1,17 @@
 .contactus {
-	padding: 241px 0 20px;
+	padding: 241px 0 120px;
 	&__title {
 		color: $colorTitleDark;
 	}
+	&__flexbox {
+		display: flex;
+		justify-content: space-between;
+	}
 	&__block {
+		width: 100%;
+		&_info {
+			padding-left: 110px;
+		}
 		&_title {
 			color: $colorTitleGrey;
 			font-size: 1.563rem;
@@ -13,7 +21,6 @@
 	}
 	
 	&__form {
-		width: 50%;
 		&_inputbox {
 			margin-bottom: 98px;
 		}
@@ -46,6 +53,7 @@
 			}
 			&:focus {
 				background: #eaeaea;
+				box-shadow: 0px 2px 0px 0px #eaeaea;
 			}
 			&::-webkit-input-placeholder {
 				color: $colorPlaceholder;
@@ -103,6 +111,17 @@
 		}
 		&_checkbox {
 			margin-bottom: 50px;
+		}
+		&_textarea {
+			@extend .contactus__form_input;
+			width: 660px;
+			height: 230px;
+			background: #eaeaea;
+			box-shadow: 0px 2px 0px 0px #eaeaea;
+		}
+		&_submit {
+			cursor: pointer;
+			margin: 0;
 		}
 	}
 	&__rangebox {
@@ -206,6 +225,108 @@
 			color: $colorTextGrey;
 			word-wrap: break-word;
 			display: inline-block;
+		}
+	}
+	
+	&__address {
+		color: $colorTextGrey;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.875;
+		margin-bottom: 25px;
+		&_companyname {
+			font-family: $fontBold;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		&_text {
+			display: block;
+		}
+	}
+	&__info {
+		&_contact {
+			@extend .contactus__address;
+			display: block;
+			text-transform: none;
+			font-family: $mainFont;
+			margin: 0;
+			&:hover,
+			&:focus,
+			&:visited {
+				color: $colorLinkGrey;
+			}
+		}
+		&_social {
+			margin: 65px 0 75px;
+		}
+		&_link {
+			border: 1px solid transparent;
+			width: 64px;
+			height: 64px;
+			border-radius: 50%;
+			position: relative;
+			display: inline-block;
+			&:hover {
+				border: 1px solid $bgBorderLinkContact;
+			}
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&_twitter {
+				&:after {
+					@include sprite($s-contact_icon_twitter);
+				}
+				&:hover {
+					&:after {
+						@include sprite($s-contact_icon_twitter_hover);
+					}
+				}
+			}
+			&_facebook {
+				&:after {
+					@include sprite($s-contact_icon_facebook);
+				}
+				&:hover {
+					&:after {
+						@include sprite($s-contact_icon_facebook_hover);
+					}
+				}
+			}
+			&_pinterest {
+				&:after {
+					@include sprite($s-contact_icon_pinterest);
+				}
+				&:hover {
+					&:after {
+						@include sprite($s-contact_icon_pinterest_hover);
+					}
+				}
+			}
+			&_linkedin {
+				&:after {
+					@include sprite($s-contact_icon_linkedin);
+				}
+				&:hover {
+					&:after {
+						@include sprite($s-contact_icon_linkedin_hover);
+					}
+				}
+			}
+			&_skype {
+				&:after {
+					@include sprite($s-contact_icon_skype);
+				}
+				&:hover {
+					&:after {
+						@include sprite($s-contact_icon_skype_hover);
+					}
+				}
+			}
 		}
 	}
 }
