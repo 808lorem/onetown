@@ -1,0 +1,21 @@
+section.works
+	.container.works__container
+		h2.works__title our works
+		nav.works__filter#flavor-nav
+			a(rel="all" class='current').works__filter_btn.works__filter_btn_all all
+			a(rel="mobile").works__filter_btn.works__filter_btn_mobile mobile apps
+			a(rel="web").works__filter_btn.works__filter_btn_web web development
+			a(rel="identity").works__filter_btn.works__filter_btn_identity identity
+			a(rel="brand").works__filter_btn.works__filter_btn_brand brand promo
+			a(rel="graphic").works__filter_btn.works__filter_btn_graphic graphic design
+			a(rel="motion").works__filter_btn.works__filter_btn_motion motion dynamics
+		.works__gallery#all-flavors
+			+works__block('App UI Kit Pro', '1', 'mobile')
+			+works__block('vintage poster effects', '2')
+			+works__block('ecommerce line icons', '3')
+			+works__block('iOS7 Icon Concepts', '4')
+			+works__block('BlueBox: Flat PSD Template', '5')
+			+works__block('iPhone App website', '6')
+			+works__block('Leather UI Elements PSD', '7')
+			+works__block('Coffee Cups PSD', '8')
+			+works__block('14 Badges in 4 Styles', '9', 'brand')

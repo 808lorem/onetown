@@ -1,0 +1,74 @@
+.works {
+	padding: 236px 0 148px;
+	&__filter {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 70px;
+		&_btn {
+			background-color: $bgServicesMain;
+			width: 100%;
+			padding: 12.5px 0;
+			color: $colorLinkWhite;
+			font-size: 0.938rem;
+			font-weight: 700;
+			text-align: center;
+			cursor: pointer;
+			&_all {
+				color: $colorLinkGrey;
+				&:hover,
+				&:focus,
+				&:visited {
+					color: $colorLinkGrey;
+				}
+			}
+			&_mobile {
+				background: $bgMobile;
+			}
+			&_web {
+				background: $bgWeb;
+			}
+			&_identity {
+				background: $bgIdentity;
+			}
+			&_brand {
+				background: $bgBrand;
+			}
+			&_graphic {
+				background: $bgGraphic;
+			}
+			&_motion {
+				background: $bgMotion;
+			}
+		}
+	}
+	&__gallery {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__block {
+		margin: 20px 0;
+		cursor: pointer;
+		&_header {
+			width: 420px;
+			height: 300px;
+		}
+		&_img {
+			width: 100%;
+			height: 300px;
+			object-fit: none;
+			object-position: 50% 50%;
+		}
+		&_name {
+			display: block;
+			padding: 37px 0;
+			color: $colorWordImgName;
+			font-size: 1.124rem;
+			font-weight: 700;
+			text-align: center;
+			font-family: $fontBold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+	}
+}
