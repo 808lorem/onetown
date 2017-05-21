@@ -182,32 +182,32 @@
 			&:not(checked) + .contactus__checkbox_label {
 				&_mobile {
 					&:before {
-						background: $bgServicesMobile;
+						background: $bgMobile;
 					}
 				}
 				&_web {
 					&:before {
-						background: $bgServicesWeb;
+						background: $bgWeb;
 					}
 				}
 				&_identity {
 					&:before {
-						background: $bgServicesIdentity;
+						background: $bgIdentity;
 					}
 				}
 				&_brand {
 					&:before {
-						background: $bgServicesBrand;
+						background: $bgBrand;
 					}
 				}
 				&_graphic {
 					&:before {
-						background: $bgServicesGraphic;
+						background: $bgGraphic;
 					}
 				}
 				&_motion {
 					&:before {
-						background: $bgServicesMotion;
+						background: $bgMotion;
 					}
 				}
 			}

@@ -8,7 +8,7 @@ mixin top-banner__slide(bg_number, title, min_title, text, link)
 							span.top-banner__title_min= min_title
 					.top-banner__content
 						span.top-banner__text= text
-						a(href="javascript:void(0);").top-banner__link.link__btn= link
+						a(href="portfolio.html").top-banner__link.link__btn= link
 						
 						
 						
@@ -45,3 +45,10 @@ mixin contactus__checkbox_wrap(title, className)
 	.contactus__checkbox_wrap
 		input(type="checkbox" name=""+className id='checkbox_'+className).contactus__checkbox_input
 		label(for='checkbox_'+className class='contactus__checkbox_label_'+className).contactus__checkbox_label= title
+		
+
+mixin works__block(name, number, filter)
+	a(href="javascript:void(0);" class='flavor all '+filter).works__block
+		.works__block_header
+			img(src="static/img/content/portfolio_img_"+number+".jpg" alt=""+name).works__block_img
+		span.works__block_name= name

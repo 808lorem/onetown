@@ -2315,6 +2315,7 @@ p {
   margin: 0; }
 
 a {
+  cursor: pointer;
   text-decoration: none;
   font-family: "LatoBold", sans-serif;
   text-transform: uppercase;
@@ -2375,11 +2376,9 @@ button {
 
 .container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1330px;
   margin: 0 auto;
-  padding: 0 15px;
-  -webkit-box-sizing: padding-box;
-          box-sizing: padding-box; }
+  padding: 0 15px; }
 
 .main-container {
   width: 100%;
@@ -3469,6 +3468,79 @@ button {
 .map {
   width: 100%;
   height: 500px; }
+
+.works {
+  padding: 236px 0 148px; }
+  .works__filter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 70px; }
+    .works__filter_btn {
+      background-color: #eaeaea;
+      width: 100%;
+      padding: 12.5px 0;
+      color: white;
+      font-size: 0.938rem;
+      font-weight: 700;
+      text-align: center;
+      cursor: pointer; }
+      .works__filter_btn_all {
+        color: #626262; }
+        .works__filter_btn_all:hover, .works__filter_btn_all:focus, .works__filter_btn_all:visited {
+          color: #626262; }
+      .works__filter_btn_mobile {
+        background: #00c59e; }
+      .works__filter_btn_web {
+        background: #df4343; }
+      .works__filter_btn_identity {
+        background: #64b341; }
+      .works__filter_btn_brand {
+        background: #874ab6; }
+      .works__filter_btn_graphic {
+        background: #ffa200; }
+      .works__filter_btn_motion {
+        background: #2f84e5; }
+  .works__gallery {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .works__block {
+    margin: 20px 0;
+    cursor: pointer; }
+    .works__block_header {
+      width: 420px;
+      height: 300px; }
+    .works__block_img {
+      width: 100%;
+      height: 300px;
+      -o-object-fit: none;
+         object-fit: none;
+      -o-object-position: 50% 50%;
+         object-position: 50% 50%; }
+    .works__block_name {
+      display: block;
+      padding: 37px 0;
+      color: #060606;
+      font-size: 1.124rem;
+      font-weight: 700;
+      text-align: center;
+      font-family: "LatoBold", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
 
 .subscribe {
   background: #2a63c1;
