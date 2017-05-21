@@ -11,8 +11,9 @@ include doctypeIE
 	body
 		include ../mixins/mixin
 		.wrapper
+			include ../modules/header
 			block content
-		block footer
+		include ../modules/footer
         
 		include jsIE
 		script(src='static/js/jquery.min.js')
