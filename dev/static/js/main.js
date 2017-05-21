@@ -6,7 +6,47 @@ var heightHeader = $('.header').height(),
 	paddingBottomHeader = parseFloat( $('.header').css('padding-bottom') );
 heightHeader += paddingTopHeader + paddingBottomHeader;
 
+var htmlName = window.location.pathname;
+
 $(document).ready(function(){
+	$(".header__nav a.active").removeClass("active");
+	$(".header__nav a").each(function(){
+		var hash = $(this).attr("href");
+		if('/' + hash == htmlName) {
+			$(this).addClass("active");
+		}
+		
+		if(htmlName == '/index.html' || htmlName == '/') {
+			
+			jQuery(function($) {
+				$(window).scroll(function(){
+					if($(this).scrollTop() > 1){
+						$('.header').addClass('fixed');
+					}
+					else if ($(this).scrollTop() < 1){
+						$('.header').removeClass('fixed');
+					}
+				});
+			});
+		} else {
+			if (hash.charAt(0) == '#') {
+				$(this).attr('href', 'index.html' + hash);
+			}
+			$('a.logo').attr('href', 'index.html');
+			$('.header').addClass('fixed');
+		}
+	});
+	
+	$(".footer__nav a").each(function() {
+		hash = $(this).attr("href");
+		if(htmlName == '/index.html' || htmlName == '/') {
+			return true;
+		} else {
+			if (hash.charAt(0) == '#') {
+				$(this).attr('href', 'index.html' + hash);
+			}
+		}
+	});
 	
 	$('.header__btn-menu').click(function() {
 		var w_w = $(window).width();
@@ -35,17 +75,6 @@ $(document).ready(function(){
 
 	// вызовем событие resize
 	$(window).resize();
-	
-	jQuery(function($) {
-		$(window).scroll(function(){
-			if($(this).scrollTop() > 1){
-				$('.header').addClass('fixed');
-			}
-			else if ($(this).scrollTop() < 1){
-				$('.header').removeClass('fixed');
-			}
-		});
-	});
 	
 	var menu_selector = ".header__nav"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню.
  
