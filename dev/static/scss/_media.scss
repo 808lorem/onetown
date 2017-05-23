@@ -89,6 +89,26 @@
 	}
 }
 
+@media only screen and (max-width : 1329px) {
+	.works {
+		&__block {
+			margin: 20px 0;
+			cursor: pointer;
+			&:nth-child(3n+2) {
+				margin: inherit;
+			}
+			&:nth-child(2n+1) {
+				margin: 20px 10px 0 20px;
+			}
+			&:nth-child(2n) {
+				margin: 20px 20px 0 10px;
+			}
+		}
+	}
+}
+
+
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	.featuredwork {
@@ -309,6 +329,26 @@
 	.testimonials {
 		&__container {
 			padding: 0 15px;
+		}
+	}
+	
+	.works {
+		&__filter {
+			margin-bottom: 0;
+			flex-direction: column;
+		}
+		&__block {
+			margin: 20px 0;
+			cursor: pointer;
+			&:nth-child(3n+2) {
+				margin: 20px 0 0;
+			}
+			&:nth-child(2n+1) {
+				margin: 20px 0 0;
+			}
+			&:nth-child(2n) {
+				margin: 20px 0 0;
+			}
 		}
 	}
 }
