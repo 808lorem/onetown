@@ -139,23 +139,6 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 	});
 	
-	
-	$('.services__block').click(function() {
-		var className = 'active'
-		
-		var arr = $(this).attr('class').split(' ');
-		
-		for (var i = 0; i < arr.length; i++) {
-			if (arr[i] === className) {
-				$('.services__block.'+className).removeClass(className);
-			} else {
-				$('.services__block.'+className).removeClass(className);
-				$(this).addClass(className);
-			}
-		}
-	});
-	
-	
 	$('.js-slick__about').slick({
 		dots: false,
 		prevArrow: '.about__arrow_prev',
@@ -179,25 +162,21 @@ $(document).ready(function(){
 			}
     	}]
 	});
-});
-
-
-function range(rangeId, inputId, value, min, max, step, firstText, lastText) {
-	$( function() {
-		$(rangeId).slider({
-			range: "min",
-			value: value,
-			min: min,
-			max: max,
-			step: step,
-			slide: function( event, ui ) {
-				$( inputId ).val(firstText + ui.value + lastText);
-			}
-		});
-		
-		$( inputId ).val(firstText + $(rangeId).slider( "value" ) + lastText);
-	} );
 	
+	$('.services__block').click(function() {
+		var className = 'active'
+		
+		var arr = $(this).attr('class').split(' ');
+		
+		for (var i = 0; i < arr.length; i++) {
+			if (arr[i] === className) {
+				$('.services__block.'+className).removeClass(className);
+			} else {
+				$('.services__block.'+className).removeClass(className);
+				$(this).addClass(className);
+			}
+		}
+	});
 	
 	$(function() {
 		var newSelection = "";
@@ -217,7 +196,24 @@ function range(rangeId, inputId, value, min, max, step, firstText, lastText) {
 			$("#all-flavors").fadeTo(600, 1);
 		});
 	});
-}
+	
+	function range(rangeId, inputId, value, min, max, step, firstText, lastText) {
+		$( function() {
+			$(rangeId).slider({
+				range: "min",
+				value: value,
+				min: min,
+				max: max,
+				step: step,
+				slide: function( event, ui ) {
+					$( inputId ).val(firstText + ui.value + lastText);
+				}
+			});
 
-range('#range-price', '#price', 5, 1, 42, 1, '$', ',000');
-range('#range-time', '#time', 2, 1, 10, 1, '', ' weeks');
+			$( inputId ).val(firstText + $(rangeId).slider( "value" ) + lastText);
+		} );
+	}
+
+	range('#range-price', '#price', 5, 1, 42, 1, '$', ',000');
+	range('#range-time', '#time', 2, 1, 10, 1, '', ' weeks');
+});

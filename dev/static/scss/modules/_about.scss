@@ -29,6 +29,7 @@
 		top: 50%;
 		transform: translateY(-50%);
 		z-index: 1;
+		cursor: pointer;
 		&_prev {
 			left: 0;
 			@include sprite($s-arrow_prev);
